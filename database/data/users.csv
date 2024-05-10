@@ -1,0 +1,3 @@
+"id","name","email","email_verified_at","password","icon","remember_token","created_at","updated_at"
+"1","Bianca Valicec","biavalicec@gmail.com",NULL,"$2y$10$AFEhPyxYKq/9wAr2yNDumex1A6uh6//0EMLzSypqiTBftxq9bcu4S","1710534438.jpg",NULL,"2024-03-15 20:27:18","2024-03-15 20:27:18"
+"2","Jane Doe","janedoe@email.com",NULL,"$2y$10$dxtgKzIUJrHsR2Jxi62ex.q257n0M0CiWMlYrfiew152cOKRyv7Qa","1710539168.jpg",NULL,"2024-03-15 21:46:08","2024-03-15 21:46:08"
