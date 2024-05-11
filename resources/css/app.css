@@ -1,0 +1,56 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.background-image 
+{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/957/498/540/artwork-digital-art-dinosaurs-apocalyptic-wallpaper-preview.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+}
+
+/*youtube iframe*/
+.video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+  
+  /*Gallery*/
+  #gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery-container img {
+    width: 100%; /* Set images to take full width of container */
+    max-width: 450px; /* Set maximum width for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px;
+    border: 10px solid #fefae0;
+    -webkit-filter: sepia(100%);
+    filter: sepia(100%);
+    transition-duration: 1s;
+}
+
+#gallery-container img:hover {
+    border: 5px solid #fff;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: none;
+    filter: none;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    #gallery-container img {
+        max-width: 100%; /* Set maximum width for smaller screens */
+    }
+}
