@@ -1,72 +1,48 @@
-# My Amazing Blogging Platform
+Our very own Goodreads
+Hello! This is our own goodread where we can share opinions on certain books and allow the users to give their own opinion.
 
-Welcome to my amazing blogging platform built with Laravel 8! This project provides a complete solution for creating and managing a blog with ease.
+About the Project
+This project is all about honest book reviews and comments. This project also allows the user to create an account, add books to a reading list and add their own comments to books they have read. Each different user has different privileges based on their account type, e.g admins can manage users on the page as well as the posts, a simple user can add comments and add reviews and a guest user can only read reviews that are already posted.
 
-## About the Project
+Requirements
+@@ -17,53 +17,56 @@ Before getting started, ensure that your system meets the following requirements
+Getting Started
+Create the respository , named: 'Laravel_CA3' and create diffeent branches
 
-This project is aimed at simplifying the process of creating and managing a blog. It includes features such as user authentication, creating, editing, and deleting blog posts, commenting on posts, and more. Plus it is all about Dinosaurs!
+Create a .env file by copying the example file
 
-## Requirements
+Install PHP dependencies:
 
-Before getting started, ensure that your system meets the following requirements:
+composer install
 
-- PHP 7.3 or higher
-- Node 12.13.0 or higher
-- Composer
-- MySQL database
+Generate the application key:
 
-## Getting Started
+php artisan key:generate
 
-1. Clone the repository:
-   ```bash
-   git clone git@github.com:GlitchWhale/ServerSideCA1.git
-   cd your_repository
-   ```
+Clear cache and configuration:
 
-2. Create a `.env` file by copying the example file:
-   ```bash
-   cp .env.example .env
-   ```
+php artisan cache:clear && php artisan config:clear
 
-3. Install PHP dependencies:
-   ```bash
-   composer install
-   ```
+Configure the database:
 
-4. Generate the application key:
-   ```bash
-   php artisan key:generate
-   ```
+Create a MySQL database for the project.
+Update the .env file with your database credentials.
+Run database migrations:
 
-5. Clear cache and configuration:
-   ```bash
-   php artisan cache:clear && php artisan config:clear
-   ```
+php artisan migrate
 
-6. Configure the database:
-   - Create a MySQL database for the project.
-   - Update the `.env` file with your database credentials.
+Seed the database with sample data (optional):
 
-7. Run database migrations:
-   ```bash
-   php artisan migrate
-   ```
+php artisan db:seed
 
-8. Seed the database with sample data (optional):
-   ```bash
-   php artisan db:seed
-   ```
+Start the development server:
 
-9. Start the development server:
-   ```bash
-   php artisan serve
-   ```
+php artisan serve
 
-10. Visit `http://localhost:8000` in your browser to access the application.
+Visit in your browser to access the application.
 
-## Contributing
-I guess you can contribute to this project but im not sure you would do that haha
+Contributers
+Bianca Valicec Eljesa Mesi
 
-## Extra Details
-D00258836 SD2B Bianca Valicec
-
+Extra Details
+D00258836 SD2B Bianca Valicec D00251881 SD2B Eljesa Mesi
